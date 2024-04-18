@@ -1,0 +1,221 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    .logo i {
+        width: 42px;
+        padding: 0 8px;
+    }
+    *{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 2.3rem;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-image: linear-gradient(to top, black, #1e2d41);
+    }
+    
+    nav {
+        color: white;
+        position: sticky;
+        top: 0;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        height: 60px;
+        background-color: #1e2d41;
+        align-items: center;
+    }
+    
+    nav li {
+        padding-right: 10px;
+        font-size: 1.2rem;
+    }
+    .container{
+        color:white;
+        width: 100vw;
+        height:100vh;
+    }
+    .categorey img{
+        width:200px;
+        height:200px;
+        border-radius: 8px;
+    }
+    .categorey p{
+        font-size: 20px;
+        text-decoration:none;
+        color: white;
+    }
+    .categorey a{
+        text-decoration: none;
+    }
+    .categorey:hover{
+        cursor: pointer;
+    }
+   
+    
+    .containers {
+        min-height: 100vh;
+        color: white;
+        display: flex;
+        text-align: left;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    
+    .songList {
+        margin: 10px 0px;
+        width: 70%;
+    }
+    
+    .songItemContainer {
+        width: 100%;
+        margin-top: 10px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .bottom {
+        position: sticky;
+        height: 130px;
+        background-color: black;
+        bottom: 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #time {
+        position: absolute;
+        right: 0;
+        margin-right: 9vw;
+    }
+    
+    .cover img {
+        width: 20vw;
+        border-radius: 10px;
+        position: fixed;
+        top: 25%;
+        left: 70%;
+        transform: translate(-50, -50);
+    }
+    
+    .uppercover {
+        display: flex;
+    }
+    
+    .cover1 img {
+        width: 40vw;
+        display: none;
+    }
+    
+    .icons {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .icons i {
+        cursor: pointer;
+        margin: 0px 20px;
+    }
+    
+    #myProgressBar {
+        width: 80vw;
+    }
+    
+    .songItem {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        height: 50px;
+        padding: 5px 0px;
+        border-bottom: 0.5px solid grey;
+    }
+    
+    .songItem img {
+        margin-right: 10px;
+        width: 43px;
+    }
+    
+    .songName {
+        margin-right: 10px;
+    }
+    
+    .songListPlay {
+        display: flex;
+        align-items: center;
+    }
+    
+    .songListPlay span {
+        margin-right: 10px;
+    }
+    
+    hr {
+        width: 70%;
+        color: gray;
+        opacity: 0.5;
+    }
+    
+    .songInfo img {
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    .songInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 10vw;
+        margin-top: 20px;
+        width: 20vw;
+    }
+    
+    @media only screen and (max-width: 1060px) {
+        /* For mobile phones: */
+        .cover {
+            display: none;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        .container h1 {
+            font-size: 40px;
+        }
+        .songList {
+            margin: 10px auto;
+        }
+        .cover1 img {
+            display: block;
+        }
+        .uppercover h1 {
+            margin: auto;
+        }
+    }
+    
+    @media only screen and (max-width:833px) {
+        .songInfo span {
+            display: none;
+        }
+    }
